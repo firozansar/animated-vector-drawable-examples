@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    android:drawable="@drawable/fab_ic_play_arrow_24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <target
+        android:animation="@anim/fab_play_to_arrowhead"
+        android:name="arrow head group"/>
+    <target
+        android:animation="@anim/fab_rotate_reset_arrow"
+        android:name="rotation group"/>
+    <target
+        android:animation="@anim/fab_tail_grow"
+        android:name="arrow tail"/>
+
+    </animated-vector>

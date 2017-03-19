@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/fab_ic_replay_24dp">
+    <target
+        android:animation="@anim/fab_tail_shrink"
+        android:name="arrow tail"/>
+    <target
+        android:animation="@anim/fab_arrowhead_to_play_rotation"
+        android:name="arrow head group"/>
+    <target
+        android:animation="@anim/fab_arrowhead_to_play_scale_x"
+        android:name="arrow head group"/>
+    <target
+        android:animation="@anim/fab_arrowhead_to_play_scale_y"
+        android:name="arrow head group"/>
+</animated-vector>

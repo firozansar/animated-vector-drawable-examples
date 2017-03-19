@@ -1,4 +1,5 @@
 <resources>
   <integer name="stroke_width">4</integer>
   <integer name="heart_animation_duration">300</integer>
+  <integer name="fab_anim_time">400</integer>
 </resources>

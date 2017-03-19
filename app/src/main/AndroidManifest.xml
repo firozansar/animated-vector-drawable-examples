@@ -32,6 +32,10 @@
             android:name=".FillInHeartActivity"
             android:label="@string/fill_in_heart"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PlayResetActivity"
+            android:label="@string/play_to_reset"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

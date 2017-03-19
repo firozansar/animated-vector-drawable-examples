@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         demos.add(new Demo(this, RotateActivity.class, R.string.clock));
         demos.add(new Demo(this, PathMorphActivity.class, R.string.smiling_face));
         demos.add(new Demo(this, FillInHeartActivity.class, R.string.fill_in_heart));
+        demos.add(new Demo(this, PlayResetActivity.class, R.string.play_to_reset));
 
 
         recyclerView = (RecyclerView) findViewById(R.id.recycleView);
