@@ -47,4 +47,5 @@
   <string name="click_the_fab">Click the FAB to see the animation!</string>
     <string name="animated_icon">Animated Icon</string>
   <string name="android_icon">Android icon</string>
+    <string name="bluetooth_icon">Bluetooth Icon</string>
 </resources>
