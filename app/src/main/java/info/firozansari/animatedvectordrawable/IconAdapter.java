@@ -34,7 +34,7 @@ class IconAdapter extends RecyclerView.Adapter<IconAdapter.ViewHolder> {
 
         viewHolder.animatedIconView.setImageDrawable(animatedIcons.get(i).getIcon());
 
-        viewHolder.name.setText(animatedIcons.get(i).getClass().getSimpleName());
+        viewHolder.title.setText(animatedIcons.get(i).getTitle());
     }
 
     @Override public int getItemCount() {
@@ -47,12 +47,12 @@ class IconAdapter extends RecyclerView.Adapter<IconAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView name;
+        public TextView title;
         public ImageView animatedIconView;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            name = (TextView) itemView.findViewById(R.id.name);
+            title = (TextView) itemView.findViewById(R.id.name);
             animatedIconView = (ImageView) itemView.findViewById(R.id.icon);
             animatedIconView.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {

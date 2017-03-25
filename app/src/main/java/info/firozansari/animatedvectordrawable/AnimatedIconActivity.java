@@ -1,6 +1,7 @@
 package info.firozansari.animatedvectordrawable;
 
 import android.os.Bundle;
+import android.support.graphics.drawable.AnimatedVectorDrawableCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -29,5 +30,19 @@ public class AnimatedIconActivity extends AppCompatActivity {
 
         mAdapter = new IconAdapter();
         recyclerView.setAdapter(mAdapter);
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        AnimatedVectorDrawableCompat avd = AnimatedVectorDrawableCompat.create(AnimatedIconActivity.this, R.drawable.anim_android);
+        AnimatedIcon icon1 = new AnimatedIcon(avd, getString(R.string.android_icon));
+        animatedIcons.add(icon1);
+
+        mAdapter.setAnimatedIcons(animatedIcons);
+
+
     }
 }

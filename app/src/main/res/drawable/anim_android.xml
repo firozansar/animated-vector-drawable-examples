@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:drawable="@drawable/android"
+    tools:ignore="NewApi">
+    
+    <target
+        android:animation="@anim/blink_left"
+        android:name="blink_left" />
+    <target
+        android:animation="@anim/blink_right"
+        android:name="blink_right" />
+    <target
+        android:animation="@anim/head_up"
+        android:name="head" />
+
+</animated-vector>
