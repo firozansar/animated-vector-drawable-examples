@@ -4,11 +4,10 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:gravity="center"
-    android:text="@string/love_it"
-    android:textSize="64sp"
-    android:textColor="@color/heart_text"
-    android:paddingLeft="16dp"
+    android:background="@null"
     android:button="@drawable/fill_in_heart"
-    android:background="@null"/>
-<!-- Remove android:background="@null" for ripple effects -->
+    android:gravity="center"
+    android:paddingLeft="16dp"
+    android:text="@string/love_it"
+    android:textColor="@color/heart_text"
+    android:textSize="64sp" />

@@ -59,9 +59,7 @@ android {
     kapt {
         correctErrorTypes = true
     }
-    dataBinding {
-       enable = true
-    }
+
     buildFeatures {
         viewBinding = true
     }
