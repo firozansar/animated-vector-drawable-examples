@@ -1,0 +1,4 @@
+package info.firozansari.animatedvectordrawable
+
+
+internal class MainActivityTest

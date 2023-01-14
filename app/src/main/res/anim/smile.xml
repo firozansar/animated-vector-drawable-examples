@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
 <objectAnimator
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:duration="3000"
@@ -6,3 +8,4 @@
   android:valueTo="@string/path_face_mouth_happy"
   android:valueType="pathType"
   android:interpolator="@android:anim/accelerate_interpolator"/>
+</set>
