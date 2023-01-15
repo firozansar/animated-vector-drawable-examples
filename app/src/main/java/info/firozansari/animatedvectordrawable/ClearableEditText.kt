@@ -21,7 +21,6 @@ class ClearableEditText : AppCompatEditText, TextWatcher {
     private var mIsClearTextButtonVisible = false
     private val mIsHandlingAction = false
     private var mPaint: Paint? = null
-    private var DEFAULT_CLEAR_BUTTON_DRAWABLE = R.drawable.ic_clear_search_api_holo_light
 
     constructor(context: Context?) : super(context!!) {}
     constructor(context: Context?, attrs: AttributeSet?) : super(context!!, attrs) {}
@@ -62,7 +61,7 @@ class ClearableEditText : AppCompatEditText, TextWatcher {
     private fun loadClearButtonBitmap() {
         if (mClearTextBitmap == null) {
             mClearTextBitmap =
-                BitmapFactory.decodeResource(getResources(), DEFAULT_CLEAR_BUTTON_DRAWABLE)
+                BitmapFactory.decodeResource(resources, R.drawable.ic_clear_24)
         }
     }
 
@@ -121,7 +120,7 @@ class ClearableEditText : AppCompatEditText, TextWatcher {
     }
 
     override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-        if (s != null && s.length > 0) {
+        if (s.isNotEmpty()) {
             mIsClearTextButtonVisible = true
         }
     }

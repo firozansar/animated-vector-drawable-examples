@@ -9,6 +9,7 @@ plugins {
     kotlin("kapt")
 
     id("com.android.application")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -73,7 +74,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.constraintlayout)
     implementation(libs.recyclerview)
-    implementation(libs.cardview)
+
+    // Dagger Hilt
+    implementation(libs.dagger.hilt.runtime)
+    kapt(libs.dagger.hilt.compiler)
 }
 
 tasks.withType<Test> {

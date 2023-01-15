@@ -6,6 +6,7 @@ buildscript {
     dependencies {
         classpath(libs.plugin.androidTools)
         classpath(libs.plugin.kotlinGradle)
+        classpath(libs.plugin.hiltAndroidGradle)
     }
 }
 
