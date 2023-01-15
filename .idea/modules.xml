@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AnimatedVectorDrawable.iml" filepath="$PROJECT_DIR$/AnimatedVectorDrawable.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/animated-vector-drawable-examples.iml" filepath="$PROJECT_DIR$/.idea/modules/animated-vector-drawable-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/animated-vector-drawable-examples.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/animated-vector-drawable-examples.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/animated-vector-drawable-examples.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/animated-vector-drawable-examples.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/animated-vector-drawable-examples.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/animated-vector-drawable-examples.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/animated-vector-drawable-examples.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/animated-vector-drawable-examples.app.unitTest.iml" />
     </modules>
   </component>
 </project>

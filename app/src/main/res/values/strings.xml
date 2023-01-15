@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Animated Vector Drawable</string>
+    <string name="app_name">Animated Vector Drawable</string>
+    <string name="main_help_text">Click image below to animate. If want to see more examples, click here</string>
+    <string name="example_from_documentation">Example from documentation</string>
+    <string name="rotation_only">Rotation only</string>
+    <string name="path_morph_only">Path morph only</string>
+    <string name="animate">Animate</string>
+    <string name="play_to_reset">Play to Reset</string>
 
-  <string name="example_from_documentation">Example from documentation</string>
-  <string name="rotation_only">Rotation only</string>
-  <string name="path_morph_only">Path morph only</string>
-  <string name="animate">Animate</string>
-  <string name="play_to_reset">Play to Reset</string>
+    <string name="clock">Clock</string>
+    <string name="smiling_face">Smiling face</string>
 
-  <string name="clock">Clock</string>
-  <string name="smiling_face">Smiling face</string>
+    <string name="fill_in_heart">Fill in heart</string>
+    <string name="love_it">Love it</string>
 
-  <string name="fill_in_heart">Fill in heart</string>
-  <string name="love_it">Love it</string>
-
-<string name="path_circle">
+    <string name="path_circle">
     M 50,50
     m -48,0
     a 48,48 0 1,0 96,0
     a 48,48 0 1,0 -96,0
   </string>
-  <string name="path_face_left_eye">
+    <string name="path_face_left_eye">
     M 35,40
     m -7,0
     a 7,7 0 1,0 14,0
     a 7,7 0 1,0 -14,0
   </string>
-  <string name="path_face_right_eye">
+    <string name="path_face_right_eye">
     M 65,40
     m -7,0
     a 7,7 0 1,0 14,0
     a 7,7 0 1,0 -14,0
   </string>
-  <string name="path_face_mouth_sad">
+    <string name="path_face_mouth_sad">
     M 30,75
     Q 50,55 70,75
   </string>
-  <string name="path_face_mouth_happy">
+    <string name="path_face_mouth_happy">
     M 30,65
     Q 50,85 70,65
   </string>
-  <string name="heart">
+    <string name="heart">
     M25.119,2.564c12.434,0.023,18.68,5.892,24.88,17.612  c6.2-11.721,12.446-17.589,24.877-17.612c13.81-0.025,25.035,10.575,25.061,23.66c0.033,23.708-24.952,47.46-49.938,71.212  C25.016,73.685,0.03,49.932,0.064,26.224C0.085,13.14,11.309,2.539,25.119,2.564z
   </string>
-  <string name="click_the_fab">Click the FAB to see the animation!</string>
+    <string name="click_the_fab">Click the FAB to see the animation!</string>
     <string name="animated_icon">Animated Icon</string>
-  <string name="android_icon">Android icon</string>
+    <string name="android_icon">Android icon</string>
     <string name="bluetooth_icon">Bluetooth Icon</string>
     <string name="animated_menu">Animated Menu</string>
 
-  <string name="title_action_cut">Cut</string>
-  <string name="title_action_copy">Copy</string>
-  <string name="title_action_delete">Delete</string>
-  <string name="title_action_share">Share</string>
+    <string name="title_action_cut">Cut</string>
+    <string name="title_action_copy">Copy</string>
+    <string name="title_action_delete">Delete</string>
+    <string name="title_action_share">Share</string>
 </resources>

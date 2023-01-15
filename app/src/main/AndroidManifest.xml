@@ -4,48 +4,25 @@
 
     <application
         android:allowBackup="true"
+        android:name=".App"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ExampleActivity"
-            android:label="@string/example_from_documentation"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".RotateActivity"
-            android:label="@string/clock"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".PathMorphActivity"
-            android:label="@string/smiling_face"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".FillInHeartActivity"
-            android:label="@string/fill_in_heart"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".PlayResetActivity"
-            android:label="@string/play_to_reset"
-            android:parentActivityName=".MainActivity" />
+
         <activity
             android:name=".AnimatedIconActivity"
             android:label="@string/animated_icon"
             android:parentActivityName=".MainActivity" />
 
-        <activity
-            android:name=".AnimatedMenuActivity"
-            android:label="@string/animated_icon"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
-
 </manifest>
