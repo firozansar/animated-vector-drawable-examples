@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Animated Vector Drawable</string>
+    <string name="app_name">AVD</string>
     <string name="main_help_text">Click image below to animate. If want to see more examples, click here</string>
     <string name="example_from_documentation">Example from documentation</string>
     <string name="rotation_only">Rotation only</string>

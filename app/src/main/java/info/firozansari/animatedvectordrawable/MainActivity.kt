@@ -1,13 +1,17 @@
 package info.firozansari.animatedvectordrawable
 
+import android.R.attr.animation
 import android.graphics.drawable.Animatable
+import android.graphics.drawable.AnimatedVectorDrawable
+import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat.animate
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
-import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dagger.hilt.android.AndroidEntryPoint
 import info.firozansari.animatedvectordrawable.databinding.ActivityMainBinding
@@ -27,12 +31,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
 
-        binding.pathMorphExample.setOnClickListener { animate(it as ImageView) }
-        binding.rotateImageExample.setOnClickListener { animate(it as ImageView) }
+        binding.animExample1.setOnClickListener { animate(it as ImageView) }
+        binding.animExample2.setOnClickListener { animate(it as ImageView) }
+        binding.animExample3.setOnClickListener { animate(it as ImageView) }
+
         binding.helpText.setOnClickListener {
             MainBottomSheet().show(supportFragmentManager, "MainBottomSheetTag")
         }
-
         fabsetup(binding)
     }
 

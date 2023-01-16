@@ -12,12 +12,10 @@ import info.firozansari.animatedvectordrawable.databinding.FragmentBottomSheetBi
 @AndroidEntryPoint
 class MainBottomSheet : BottomSheetDialogFragment() {
     private lateinit var binding: FragmentBottomSheetBinding
-    private lateinit var viewModel: MainViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val activity = requireActivity()
-        viewModel = ViewModelProvider(activity)[MainViewModel::class.java]
+
         binding.closeButton.setOnClickListener {
             dismiss()
         }
