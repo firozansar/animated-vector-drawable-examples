@@ -18,11 +18,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".AnimatedIconActivity"
-            android:label="@string/animated_icon"
-            android:parentActivityName=".MainActivity" />
-
     </application>
 </manifest>

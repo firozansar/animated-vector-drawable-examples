@@ -39,22 +39,31 @@
             app:layout_constraintStart_toStartOf="parent"/>
 
         <ImageView
-            android:id="@+id/path_morph_example"
+            android:id="@+id/anim_example_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/normal_margin"
-            android:src="@drawable/smiling_face"
+            android:src="@drawable/anim_android"
             app:layout_constraintTop_toBottomOf="@id/help_text"
             app:layout_constraintLeft_toLeftOf="parent"/>
 
         <ImageView
-            android:id="@+id/rotate_image_example"
+            android:id="@+id/anim_example_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/normal_margin"
-            android:src="@drawable/nine_to_five"
-            app:layout_constraintTop_toBottomOf="@id/path_morph_example"
+            android:src="@drawable/anim_blutooth"
+            app:layout_constraintTop_toBottomOf="@id/anim_example_1"
             app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/anim_example_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:src="@drawable/anim_example"
+            app:layout_constraintTop_toBottomOf="@id/help_text"
+            app:layout_constraintRight_toRightOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
