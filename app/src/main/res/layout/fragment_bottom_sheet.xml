@@ -11,12 +11,10 @@
         android:layout_height="wrap_content"
         android:background="@null"
         android:button="@drawable/fill_in_heart"
-        android:layout_gravity="left"
-        android:paddingLeft="8dp"
         android:text="@string/love_it"
         android:textColor="@color/heart_text"
         android:textSize="24sp"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/big_margin"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -29,34 +27,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <TextView
+    <ImageView
         android:id="@+id/example_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/normal_margin"
-        android:text="@string/example_from_documentation"
-        app:drawableBottomCompat="@drawable/avd"
+        android:src="@drawable/smiling_face"
         app:layout_constraintTop_toBottomOf="@id/love_it_cb"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <TextView
+    <ImageView
         android:id="@+id/example_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/normal_margin"
-        android:text="@string/rotation_only"
-        app:drawableBottomCompat="@drawable/avd_rotation_only"
+        android:src="@drawable/nine_to_five"
         app:layout_constraintTop_toBottomOf="@id/example_1"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <TextView
-        android:id="@+id/example_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/normal_margin"
-        android:text="@string/path_morph_only"
-        app:drawableBottomCompat="@drawable/avd_path_morph_only"
-        app:layout_constraintTop_toBottomOf="@id/example_2"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+<!--    <TextView-->
+<!--        android:id="@+id/example_1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="@dimen/normal_margin"-->
+<!--        android:text="@string/example_from_documentation"-->
+<!--        app:drawableBottomCompat="@drawable/avd"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/love_it_cb"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
