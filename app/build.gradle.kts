@@ -13,6 +13,7 @@ plugins {
 }
 
 android {
+    namespace = "info.firozansari.animatedvectordrawable"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
