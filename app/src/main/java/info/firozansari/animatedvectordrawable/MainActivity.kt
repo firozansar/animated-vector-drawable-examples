@@ -15,7 +15,7 @@ import info.firozansari.animatedvectordrawable.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private var floatingActionButton: FloatingActionButton? = null
+    private lateinit var floatingActionButton: FloatingActionButton
     private var playToResetAnim: AnimatedVectorDrawableCompat? = null
     private var resetToPlayAnim: AnimatedVectorDrawableCompat? = null
     private var isShowingPlay = true
@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setSupportActionBar(binding.toolbar)
 
         binding.animExample1.setOnClickListener { animate(it as ImageView) }
         binding.animExample2.setOnClickListener { animate(it as ImageView) }
@@ -32,23 +31,23 @@ class MainActivity : AppCompatActivity() {
         binding.helpText.setOnClickListener {
             MainBottomSheet().show(supportFragmentManager, "MainBottomSheetTag")
         }
-        fabsetup(binding)
+        fabSetup(binding)
     }
 
-    private fun fabsetup(binding: ActivityMainBinding){
+    private fun fabSetup(binding: ActivityMainBinding){
         floatingActionButton = binding.fab
         playToResetAnim =
             AnimatedVectorDrawableCompat.create(this, R.drawable.fab_play_to_reset_animated_vector)
         resetToPlayAnim =
             AnimatedVectorDrawableCompat.create(this, R.drawable.fab_reset_to_play_animated_vector)
-        floatingActionButton?.setImageDrawable(playToResetAnim)
-        floatingActionButton?.setOnClickListener { changeButtonIcon() }
+        floatingActionButton.setImageDrawable(playToResetAnim)
+        floatingActionButton.setOnClickListener { changeButtonIcon() }
     }
 
     private fun changeButtonIcon() {
         val currentDrawable: AnimatedVectorDrawableCompat? =
             if (isShowingPlay) playToResetAnim else resetToPlayAnim
-        floatingActionButton?.setImageDrawable(currentDrawable)
+        floatingActionButton.setImageDrawable(currentDrawable)
         currentDrawable?.start()
         isShowingPlay = !isShowingPlay
     }
