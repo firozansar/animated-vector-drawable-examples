@@ -150,5 +150,5 @@
     <color name="blue_dark">#005B9F</color>
     <color name="blue_light">#81D4FA</color>
     <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
+    <color name="white">#000000</color>
 </resources>
